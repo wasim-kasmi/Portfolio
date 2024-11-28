@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <!-- Ajouter ici des liens vers des bibliothèques comme Bootstrap ou FontAwesome si nécessaire -->
+</head>
+<body>
+    <header>
+        <div class="profil-image">
+            <img class="test-rond" src="./img/image wasim portfolio.jpg" alt="photo de profil" height="250" width="250" class="img-fluid rounded-circle">
+        </div>
+        <aside>
+            <section class="menu">
+                <a href="#home">Home</a><br>
+                <a href="#portfolio">Portfolio</a><br>
+                <a href="#contact">Contact Me</a><br>
+            </section>
+            <section class="écriture">
+                <h1>Hi There! How are you?</h1>
+                <h3>I am Kasmi Wasim</h3>
+                <h3>I am an IT student</h3>
+                <h4>Welcome to my portfolio</h4>
+            </section>
+        </aside>
+    </header>
+
+    <main>
+        <!-- Section Home -->
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="https://img.freepik.com/photos-gratuite/beaux-bureaux-dans-style-dessins-animes_23-2151043348.jpg?t=st=1732721501~exp=1732725101~hmac=c07a2e67d777269117c2534e96311d4807605d17f4f53c5af8f84769e906b0a6&w=900" alt="bureau dans style dessin animé" class="img-fluid">
+            <p>Je suis un étudiant qui aime découvrirer de nouvelle chose. J'aime apprendre meme si cela me parais difficile je persiste et essaye de comprendre. J'ai mis cette image car elle me définis bien. </p>
+        </section>
+
+        <!-- Section Portfolio -->
+        <section id="portfolio">
+            <h1>Mes Projets</h1>
+            <div class="project">
+                <h3>Projet HTML</h3>
+                <img src="./img/Capture d'écran 2024-11-27 172432.png" alt="capture d'écran" height="500" width="900">
+            </div>
+            <div class="project">
+                <h2>Projet Tic Tac Toe</h2>
+                <a href="https://github.com/wasim-kasmi/tic-tac-toe">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVTUlDfyUiEwYFE0NxdOGneaNq2MOcOWWejv9k0dE%2B4kvTtvKt4PlwEhLiIy%2B66SGYf9iXmiqW%2B9ACa%2BcimLEjJNZmk1dQGFyioGnRSwPjfac7WbJaHWmHk%2FamSbsQEUW8IJtl27lLE5dHj7zAb274jYlEmtYcEQQM%2FK9SB6iVHHuzMEKY5WwblVMlKiIJasMZY%2FZE%2B3R%2FXEF8phMaFgvQiKjYyIRQBz7EmDOKJqVEx8d%2B3uhU5wT3KIbgmZdBOjgbuSYDy9ULR25QJu7VRm1wM37eHh03kmvOQLU3Lh%2B6VNM4ZsGJf2hDqtgze9RhlPWMHYOOXpx0GP%2FwjVkMMw%2BTBdCwTdk8YesUNaI%2BuKtNPG4QxRlYKT9%2BAvhovMcnc1U3gLU8nR%2BS6qgjjjixMNzadAxNjgjTJ%2BnLABsbcP7lGsB02GRlFgfyD9lwDdoYHNhmhPtrZ6VWyMJ8VdtC3v%2FLcCIja%2Fute%2FenyPsOpTvkYZLX2xFlMYtjlHDIgViR3pvAPFe5wCqndDzSZ%2BxvKNeXLP%2BcDFQllcoeXW5sVlHOoPCIhTt7rTVLU9af4BnlUSi1HRZIwlvv4NvwO6KxIestR4lat%2B%2FmffaYPewg%3D&sz=w1908-h891" alt="vidéo du Tic Tac Toe" height="500" width="900">
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me for collaborations or inquiries.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kasmi Wasim. All rights reserved.</p>
+        <p><a href="https://github.com/wasim-kasmi" target="_blank">My GitHub</a> | <a href="https://www.linkedin.com/in/wasim-kasmi/" target="_blank">LinkedIn</a></p>
+    </footer>
+
+    <script src="Js/app.js"></script>
+</body>
+</html>

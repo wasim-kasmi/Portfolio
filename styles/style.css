@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global */
+body {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(217, 136, 21);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Section profil et menu */
+.profil-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 100px;
+    background-color: black;
+}
+
+.test-rond {
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #bd5d38; /* Couleur d'accent */
+}
+
+.écriture {
+    color: rgb(253, 252, 252);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.écriture h1, .écriture h2, .écriture h3, .écriture h4 {
+    margin-bottom: 10px;
+}
+
+/* Style des sections du portfolio */
+section {
+    padding: 50px 20px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+section#home {
+    text-align: center;
+}
+
+section#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project a {
+    text-decoration: none;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #bd5d38;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #824027;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: #bd5d38;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #824027;
+}
+
+/* Media Queries pour responsivité */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .profil-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .project img {
+        max-width: 90%;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profil-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+}
